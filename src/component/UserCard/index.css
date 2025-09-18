@@ -1,32 +1,74 @@
-.bg-container{
-    padding: 50px;
-    height: auto;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: skyblue;
-    flex-wrap: wrap;
+.bg-container {
+  padding: 50px;
+  height: auto;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: skyblue;
+  flex-wrap: wrap;
+  box-sizing: border-box; /* prevent overflow from padding */
+}
 
+/* For smaller screens (tablets) */
+@media (max-width: 768px) {
+  .bg-container {
+    padding: 30px 20px;
+    flex-direction: column; /* stack items vertically */
+    align-items: center;
+  }
 }
-.bg-container-1{
-    padding: 50px;
-    height: auto;
-    width: 100vw;
-    background-color: skyblue;
-    text-align: center;
+
+@media (max-width: 480px) {
+  .bg-container {
+    padding: 20px 10px;
+  }
 }
-.heading-ele{
-    color: black;
-    font-size: 30px;
-    text-decoration: underline;
-    font-family: "bree-serif";
-    text-align: center;
+
+.bg-container-1 {
+  padding: 50px;
+  height: auto;
+  width: 100vw;
+  background-color: skyblue;
+  text-align: center;
+  box-sizing: border-box;
 }
-.loader-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 100px;
+
+/* Responsive padding and font size for heading container */
+@media (max-width: 768px) {
+  .bg-container-1 {
+    padding: 30px 15px;
+  }
+}
+
+.heading-ele {
+  color: black;
+  font-size: 30px;
+  text-decoration: underline;
+  font-family: "bree-serif";
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Smaller font on small screens */
+@media (max-width: 480px) {
+  .heading-ele {
+    font-size: 24px;
+  }
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+/* Stack loader content vertically on small devices */
+@media (max-width: 480px) {
+  .loader-container {
+    flex-direction: column;
+    margin-top: 50px;
+  }
 }
