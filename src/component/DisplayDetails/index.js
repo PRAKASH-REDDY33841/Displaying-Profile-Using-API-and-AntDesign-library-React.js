@@ -97,6 +97,7 @@ const DisplayDetails = (props) => {
         style={{
           backgroundColor: "#000",
           color: "#fff",
+          marginBottom: 16,
         }}
         title={
           <Row gutter={16} align="middle">
