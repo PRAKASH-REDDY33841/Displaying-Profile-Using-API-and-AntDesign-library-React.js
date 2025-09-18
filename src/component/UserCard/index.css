@@ -3,16 +3,26 @@
     height: auto;
     width: 100vw;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     background-color: skyblue;
+    flex-wrap: wrap;
+
+}
+.bg-container-1{
+    padding: 50px;
+    height: auto;
+    width: 100vw;
+    background-color: skyblue;
+    text-align: center;
 }
 .heading-ele{
     color: black;
     font-size: 30px;
     text-decoration: underline;
     font-family: "bree-serif";
+    text-align: center;
 }
 .loader-container{
     display: flex;
