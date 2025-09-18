@@ -95,9 +95,6 @@ const DisplayDetails = (props) => {
     <>
       <Card
         style={{
-          width: "30%",
-          marginBottom: 16,
-          margin: "10px",
           backgroundColor: "#000",
           color: "#fff",
         }}
