@@ -33,9 +33,12 @@ class UserCard extends Component {
         <h1 className="heading-ele">Display Profile Details</h1>
 
         
-    { profileDetails.map((eachItem) => (
-            <DisplayDetails key={eachItem.id} eachProfileItem={eachItem} />
-          )}
+    {profileDetails.map((eachItem) => (
+  <DisplayDetails 
+    key={eachItem.id} 
+    eachProfileItem={eachItem} 
+  />
+))}
       </div>
     );
   }
