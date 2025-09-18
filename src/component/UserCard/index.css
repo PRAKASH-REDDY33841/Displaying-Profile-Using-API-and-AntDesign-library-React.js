@@ -1,0 +1,16 @@
+.bg-container{
+    padding: 50px;
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: skyblue;
+}
+.heading-ele{
+    color: black;
+    font-size: 30px;
+    text-decoration: underline;
+    font-family: "bree-serif";
+}
